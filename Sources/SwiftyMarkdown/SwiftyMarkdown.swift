@@ -666,13 +666,14 @@ extension SwiftyMarkdown {
         default:
             if line.line == "" { break }
             // should not reset orderedListCount if got an empty line
-            self.orderedListCount = 0
-            self.orderedListIndentFirstOrderCount = 0
-            self.orderedListIndentSecondOrderCount = 0
+//            self.orderedListCount = 0
+//            self.orderedListIndentFirstOrderCount = 0
+//            self.orderedListIndentSecondOrderCount = 0
         }
 
         let lineProperties : LineProperties
         switch markdownLineStyle {
+            
         case .h1:
             lineProperties = self.h1
         case .h2:
